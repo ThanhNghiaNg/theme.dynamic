@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --white: #ccc;
+    --black: #000;
+    --accent: #007bff;
+  }
+
+  [data-theme="dark"] {
+    --text-color: var(--white);
+    --background-color: var(--black);
+  }
+
+  [data-theme="light"] {
+    --text-color: var(--black);
+    --background-color: var(--white);
+  }
+}
